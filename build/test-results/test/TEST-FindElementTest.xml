@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="FindElementTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-04-08T08:42:59.645Z" hostname="FUJITSU" time="2.301">
+  <properties/>
+  <testcase name="findElementByClassName" classname="FindElementTest" time="0.071"/>
+  <testcase name="findElementById" classname="FindElementTest" time="0.081"/>
+  <testcase name="findElementByTagName" classname="FindElementTest" time="0.088"/>
+  <system-out><![CDATA[866-720-5721
+Best solution for rent your car when you are on holiday
+city
+Find your car now!
+Type your data and hit Yalla!
+logo
+30
+]]></system-out>
+  <system-err><![CDATA[апр. 08, 2026 10:42:59 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 146, returning the closest version; found: 144; Please update to a Selenium version that supports CDP version 146
+апр. 08, 2026 10:43:00 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 146, returning the closest version; found: 144; Please update to a Selenium version that supports CDP version 146
+апр. 08, 2026 10:43:01 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 146, returning the closest version; found: 144; Please update to a Selenium version that supports CDP version 146
+]]></system-err>
+</testsuite>
