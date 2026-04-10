@@ -53,6 +53,21 @@ public class OpenPage {
 
     }
 
+    @Test
+    public void findElementByXpath() {
+        driver.findElements(By.xpath("//a[@class = 'ico-register']"));
+        driver.findElements(By.xpath("//a[@class = 'ico-login']"));
+        driver.findElements(By.xpath("//span[@class = 'cart-label']"));
+        driver.findElements(By.xpath("//span[@class = 'ico-wishlist']"));
+        driver.findElements(By.xpath("//input[@id = 'small-searchterms']"));
+        driver.findElements(By.xpath("//a[@href = '/books']"));
+        driver.findElements(By.xpath("//a[@href = '/computers']"));
+        driver.findElements(By.xpath("//a[@href = '/electronics']"));
+        driver.findElements(By.xpath("//a[@href = '/apparel-shoes']"));
+
+
+    }
+
     @AfterMethod
     public void tearDown() {
         driver.quit();
