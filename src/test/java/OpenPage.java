@@ -1,4 +1,5 @@
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
@@ -18,6 +19,38 @@ public class OpenPage {
     @Test
     public void openPage() {
         System.out.println("Open Page");
+    }
+
+    @Test
+    public void find10Elements() {
+        driver.findElement(By.className("ico-register"));
+        driver.findElement(By.className("ico-login"));
+        driver.findElement(By.className("cart-label"));
+        driver.findElement(By.className("ico-wishlist"));
+        driver.findElement(By.id("small-searchterms"));
+        driver.findElement(By.className("button-1"));
+        driver.findElements(By.linkText("Books"));
+        driver.findElements(By.linkText("Computers"));
+        driver.findElements(By.linkText("Electronics"));
+        driver.findElements(By.linkText("Apparel & Shoes"));
+
+
+    }
+
+    @Test
+    public void findElementsByCss() {
+        driver.findElements(By.cssSelector(".ico-register"));
+        driver.findElement(By.cssSelector(".ico-login"));
+        driver.findElement(By.cssSelector(".cart-label"));
+        driver.findElement(By.cssSelector(".ico-wishlist"));
+        driver.findElement(By.cssSelector("#small-searchterms"));
+        driver.findElement(By.cssSelector("input[value='Search']"));
+        driver.findElement(By.cssSelector("a[href='/books']"));
+        driver.findElement(By.cssSelector("a[href='/computers']"));
+        driver.findElement(By.cssSelector("a[href='/electronics']"));
+        driver.findElement(By.cssSelector("a[href='/apparel-shoes']"));
+
+
     }
 
     @AfterMethod
