@@ -6,7 +6,8 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class OpenPage {
+public class
+OpenPage {
     WebDriver driver;
 
     @BeforeMethod
@@ -22,6 +23,8 @@ public class OpenPage {
     }
 
     @Test
+
+
     public void find10Elements() {
         driver.findElement(By.className("ico-register"));
         driver.findElement(By.className("ico-login"));
