@@ -7,18 +7,18 @@ import org.testng.annotations.Test;
 
 public class CreateAccountTests extends TestBase {
     @Test
-    public void registrationTest(){
-        driver.findElement(By.linkText("Register")).click();
-        driver.findElement(By.id("gender-male")).click();
-        driver.findElement(By.id("FirstName")).sendKeys("Aleksey");
-        driver.findElement(By.id("LastName")).sendKeys("Lu");
-        int i = (int)(System.currentTimeMillis() % 100000);
-        driver.findElement(By.id("Email")).sendKeys("test" + i + "@mail.com");
-        driver.findElement(By.id("Password")).sendKeys("Aa12345!");
-        driver.findElement(By.id("ConfirmPassword")).sendKeys("Aa12345!");
-        driver.findElement(By.id("register-button")).click();
+    public void registrationTest() {
+        click(By.linkText("Register"));
+        click(By.id("gender-male"));
+        type(By.id("FirstName"), "Aleksey");
+        type(By.id("LastName"), "Lu");
+        int i = (int) (System.currentTimeMillis() % 100000);
+        type(By.id("Email"), "test" + i + "@mail.com");
+        type(By.id("Password"), "Aa12345!");
+        type(By.id("ConfirmPassword"), "Aa12345!");
+        click(By.id("register-button"));
 
-        Assert.assertTrue(driver.findElement(By.className("result")).isDisplayed());
+        Assert.assertTrue(isPresent(By.className("result")));
 
 
 
