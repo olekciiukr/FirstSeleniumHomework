@@ -8,15 +8,10 @@ public class AddItemToCartTest extends TestBase {
 
     @Test
     public void addItemToCartTest() {
-        click(By.cssSelector(".ico-login"));
-        type(By.id("Email"), "aleks12345@gmail.com");
-        type(By.id("Password"), "Aa12345!");
-        click(By.cssSelector("input.login-button"));
-
-        click(By.xpath("(//input[@value='Add to cart'])[2]"));
-        click(By.cssSelector(".cart-label"));
-
-        Assert.assertTrue(isPresent(By.xpath("//a[text()='14.1-inch Laptop']")));
+        app.getUser().login();
+        app.getBase().click(By.xpath("//a[text()='14.1-inch Laptop']/../../..//input[@value='Add to cart']"));
+        app.getBase().click(By.cssSelector(".cart-label"));
+        Assert.assertTrue(app.getBase().isPresent(By.xpath("//a[text()='14.1-inch Laptop']")));
 
 
     }
