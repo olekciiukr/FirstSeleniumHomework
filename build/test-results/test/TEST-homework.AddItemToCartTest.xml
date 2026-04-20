@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="homework.AddItemToCartTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-04-20T21:39:36.072Z" hostname="FUJITSU" time="2.131">
+  <properties/>
+  <testcase name="addItemToCartTest" classname="homework.AddItemToCartTest" time="2.131"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[апр. 20, 2026 11:39:35 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 147, returning the closest version; found: 144; Please update to a Selenium version that supports CDP version 147
+]]></system-err>
+</testsuite>
